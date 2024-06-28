@@ -1,0 +1,72 @@
+/*------------------------- TASK - 3 ------------------------*/
+
+/*-------------- BODY --------------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(43, 45, 54);
+    margin: 0;
+    color: white;
+}
+
+/*-------------- GAME TITLE ----------------*/
+.tic-tac-toe {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/*------------------ GAME BOARD ----------------*/
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: black;
+}
+
+.cell:hover {
+    background: #d0d0d0;
+}
+
+/* ------------------ GAME STATUS ---------------*/
+#game-status {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/*--------- RESTART BUTTON -------------*/
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#restart-button:hover {
+    transition: scale 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    scale: 98%;
+    background-color: rgb(43, 45, 54);
+    color: white;
+    box-shadow: 0 0 10px white;
+    border: solid black;
+}
